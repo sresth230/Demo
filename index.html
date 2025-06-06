@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OK Plumbing & Repair | Top Rated Plumbers in Oklahoma City</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .title-font {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center;
+            background-size: cover;
+            height: 80vh;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .fade-in {
+            animation: fadeIn 1.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="bg-blue-900 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-tools text-2xl text-blue-300"></i>
+                    <a href="#" class="title-font text-xl md:text-2xl font-bold">OK Plumbing & Repair</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="hover:text-blue-300 transition">Services</a>
+                    <a href="#about" class="hover:text-blue-300 transition">About</a>
+                    <a href="#contact" class="hover:text-blue-300 transition">Contact</a>
+                    <a href="#blog" class="hover:text-blue-300 transition">Blog</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-800 px-4 pb-4">
+            <a href="#services" class="block py-2 hover:text-blue-300 transition">Services</a>
+            <a href="#about" class="block py-2 hover:text-blue-300 transition">About</a>
+            <a href="#contact" class="block py-2 hover:text-blue-300 transition">Contact</a>
+            <a href="#blog" class="block py-2 hover:text-blue-300 transition">Blog</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section flex items-center fade-in">
+        <div class="container mx-auto px-4 text-center text-white">
+            <h1 class="title-font text-4xl md:text-6xl font-bold mb-4">40 Years of Trusted Plumbing Service</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Family-owned & operated since 1985 providing Oklahoma City with top-quality plumbing solutions at affordable prices.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="tel:405-999-7289" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg text-lg transition transform hover:scale-105 pulse">
+                    <i class="fas fa-phone-alt mr-2"></i> Call Now: 405-999-7289
+                </a>
+                <a href="#contact" class="bg-white hover:bg-gray-100 text-blue-900 font-bold py-3 px-6 rounded-lg text-lg transition transform hover:scale-105">
+                    <i class="fas fa-calendar-alt mr-2"></i> Schedule Service
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="title-font text-3xl md:text-4xl font-bold text-blue-900 mb-4">Our Plumbing Services</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Comprehensive plumbing solutions for residential and commercial properties throughout Oklahoma City area.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-gray-50 p-6 rounded-lg shadow-md border-l-4 border-blue-600">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-water text-4xl"></i>
+                    </div>
+                    <h3 class="title-font text-xl font-bold mb-3">Drain Cleaning</h3>
+                    <p class="text-gray-600">Expert clog removal for kitchen, bathtub, shower drains, and sewer main lines. Say goodbye to slow drains!</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-gray-50 p-6 rounded-lg shadow-md border-l-4 border-blue-600">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-fire-extinguisher text-4xl"></i>
+                    </div>
+                    <h3 class="title-font text-xl font-bold mb-3">Water Heaters</h3>
+                    <p class="text-gray-600">Repair and replacement of electric and gas water heaters. We'll keep your hot water flowing.</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-gray-50 p-6 rounded-lg shadow-md border-l-4 border-blue-600">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-toilet text-4xl"></i>
+                    </div>
+                    <h3 class="title-font text-xl font-bold mb-3">Toilet Services</h3>
+                    <p class="text-gray-600">From simple repairs to complete toilet replacements, we handle all your bathroom plumbing needs.</p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card bg-gray-50 p-6 rounded-lg shadow-md border-l-4 border-blue-600">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-snowflake text-4xl"></i>
+                    </div>
+                    <h3 class="title-font text-xl font-bold mb-3">Pipe Services</h3>
+                    <p class="text-gray-600">Frozen pipe repair, slab leak location/repair, winter protection wrapping, and full pipe replacement.</p>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card bg-gray-50 p-6 rounded-lg shadow-md border-l-4 border-blue-600">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-wrench text-4xl"></i>
+                    </div>
+                    <h3 class="title-font text-xl font-bold mb-3">Faucet & Fixtures</h3>
+                    <p class="text-gray-600">Professional installation and repair of all bathroom and kitchen faucets, shower heads, and more.</p>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card bg-gray-50 p-6 rounded-lg shadow-md border-l-4 border-blue-600">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-home text-4xl"></i>
+                    </div>
+                    <h3 class="title-font text-xl font-bold mb-3">Remodeling & Installation</h3>
+                    <p class="text-gray-600">Complete plumbing for home additions, remodeling projects, water softeners, and RO systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8 fade-in">
+                    <img src="https://images.unsplash.com/photo-1581093450930-03ef3d49a8d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Plumber working" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="title-font text-3xl md:text-4xl font-bold text-blue-900 mb-6">Family-Owned Since 1985</h2>
+                    <div class="w-24 h-1 bg-blue-600 mb-6"></div>
+                    <p class="text-gray-600 mb-4">For nearly four decades, OK Plumbing & Repair has been the trusted name for plumbing services in Oklahoma City. Our family has proudly served this community with dedication and expertise passed down through generations.</p>
+                    <p class="text-gray-600 mb-6">What sets us apart is our commitment to old-fashioned values combined with modern plumbing techniques. We treat every customer like family and every job as if it were in our own home.</p>
+                    <div class="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-600">
+                        <h3 class="title-font text-xl font-bold text-blue-900 mb-2">Why Choose Us</h3>
+                        <ul class="text-gray-700 space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> 40 years of local experience</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Family-owned & operated</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Upfront pricing - no hidden fees</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Licensed, insured, & bonded</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> 24/7 emergency service</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-blue-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="title-font text-3xl md:text-4xl font-bold mb-4">What Our Customers Say</h2>
+                <div class="w-24 h-1 bg-blue-300 mx-auto mb-6"></div>
+                <p class="text-blue-200 max-w-2xl mx-auto">Don't just take our word for it - hear what Oklahoma City homeowners and businesses have to say about our service.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-blue-800 p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="italic mb-6">"When our water heater burst on a Sunday night, OK Plumbing had someone at our door in under an hour. They fixed it quickly and at a fair price. We won't call anyone else now!"</p>
+                    <div class="flex items-center">
+                        <div class="mr-4">
+                            <span class="block font-bold">Sarah Johnson</span>
+                            <span class="text-blue-300 text-sm">Edmond, OK</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-blue-800 p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="italic mb-6">"I've used OK Plumbing for all my rental properties for years. They're always professional, do excellent work, and their prices are reasonable. The best in the business!"</p>
+                    <div class="flex items-center">
+                        <div class="mr-4">
+                            <span class="block font-bold">Michael Thompson</span>
+                            <span class="text-blue-300 text-sm">Property Manager</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-blue-800 p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="italic mb-6">"The plumber who came out was incredibly knowledgeable and fixed our leak on the first try. What I appreciated most was that he explained everything clearly and didn't try to upsell unnecessary services."</p>
+                    <div class="flex items-center">
+                        <div class="mr-4">
+                            <span class="block font-bold">Lisa Rodriguez</span>
+                            <span class="text-blue-300 text-sm">OKC Resident</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="title-font text-3xl md:text-4xl font-bold text-blue-900 mb-4">From Our Plumbing Blog</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Tips, advice, and plumbing wisdom from our expert plumbers to help you avoid common plumbing issues.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1621878132274-c6af57e3f114?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Winter pipe protection" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-blue-600 text-sm">Winter Tips</span>
+                        <h3 class="title-font text-xl font-bold mt-2 mb-3">Preventing Frozen Pipes: A Winter Checklist</h3>
+                        <p class="text-gray-600 mb-4">Essential steps every Oklahoma homeowner should take to protect their pipes during cold snaps.</p>
+                        <a href="#" class="text-blue-600 font-semibold hover:text-blue-800 transition flex items-center">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Water heater" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-blue-600 text-sm">Maintenance</span>
+                        <h3 class="title-font text-xl font-bold mt-2 mb-3">When to Replace vs. Repair Your Water Heater</h3>
+                        <p class="text-gray-600 mb-4">Learn how to evaluate whether your water heater needs service or replacement to save money in the long run.</p>
+                        <a href="#" class="text-blue-600 font-semibold hover:text-blue-800 transition flex items-center">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Drain cleaning" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-blue-600 text-sm">DIY Tips</span>
+                        <h3 class="title-font text-xl font-bold mt-2 mb-3">7 Safe Home Remedies for Clogged Drains</h3>
+                        <p class="text-gray-600 mb-4">What really works to clear a slow drain - and what you should never pour down your pipes.</p>
+                        <a href="#" class="text-blue-600 font-semibold hover:text-blue-800 transition flex items-center">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition transform hover:scale-105">
+                    Visit Our Blog For More Tips <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="title-font text-3xl md:text-4xl font-bold text-blue-900 mb-4">Contact OK Plumbing & Repair</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Ready to schedule service? Have questions about your plumbing? Reach out to our friendly team today.</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="title-font text-xl font-bold text-blue-900 mb-6">Send Us a Message</h3>
+                        <form>
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-700 mb-2">Your Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 mb-2">Email Address</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="service" class="block text-gray-700 mb-2">Service Needed</label>
+                                <select id="service" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                    <option value="">Select a Service</option>
+                                    <option value="drain-cleaning">Drain Cleaning</option>
+                                    <option value="water-heater">Water Heater Service</option>
+                                    <option value="toilet">Toilet Repair/Replacement</option>
+                                    <option value="leak">Leak Detection/Repair</option>
+                                    <option value="other">Other Plumbing Issue</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="block text-gray-700 mb-2">Details</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 md:pl-8">
+                    <div class="bg-blue-900 text-white p-6 rounded-lg shadow-md h-full">
+                        <h3 class="title-font text-xl font-bold mb-6">Contact Information</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="text-blue-300 mt-1 mr-4">
+                                    <i class="fas fa-map-marker-alt text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Our Location</h4>
+                                    <p>101 Park Ave Suite 1300 # 13024<br>Oklahoma City, OK 73102</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="text-blue-300 mt-1 mr-4">
+                                    <i class="fas fa-phone-alt text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Call Us</h4>
+                                    <p>405-999-7289<br>24/7 Emergency Service Available</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="text-blue-300 mt-1 mr-4">
+                                    <i class="fas fa-envelope text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Email Us</h4>
+                                    <p>service@okplumbingrepair.com<br>We respond within 24 hours</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="text-blue-300 mt-1 mr-4">
+                                    <i class="fas fa-clock text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Business Hours</h4>
+                                    <p>Monday-Friday: 7:00 AM - 7:00 PM<br>Saturday: 8:00 AM - 5:00 PM<br>Sunday: Emergency Only</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map and Call to Action -->
+    <div class="relative">
+        <div class="absolute inset-0 bg-blue-900 opacity-50"></div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3249.2131320860357!2d-97.5120753240269!3d35.469839230330085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b217355c3b0b11%3A0x47ad7d87d3a6bfea!2s101%20Park%20Ave%20%231300%2C%20Oklahoma%20City%2C%20OK%2073102%2C%20USA!5e0!3m2!1sen!2s!4v1689871291343!5m2!1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-96"></iframe>
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+            <div class="bg-white p-8 rounded-lg shadow-xl max-w-md mx-auto">
+                <h3 class="title-font text-2xl font-bold text-blue-900 mb-4">Ready for Professional Plumbing Service?</h3>
+                <p class="text-gray-600 mb-6">Don't let plumbing problems disrupt your home or business. Our expert team is just a phone call away.</p>
+                <a href="tel:405-999-7289" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition transform hover:scale-105">
+                    <i class="fas fa-phone-alt mr-2"></i> Call Now: 405-999-7289
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="title-font text-xl font-bold mb-4">OK Plumbing & Repair</h3>
+                    <p class="text-gray-400">Proudly serving Oklahoma City and surrounding areas with top-quality plumbing solutions since 1985.</p>
+                </div>
+                <div>
+                    <h3 class="title-font text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="#blog" class="text-gray-400 hover:text-white transition">Blog</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="title-font text-xl font-bold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Drain Cleaning</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Water Heaters</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Leak Detection</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Pipe Repair</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="title-font text-xl font-bold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-xl transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl transition"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <p class="text-gray-400">Licensed • Insured • Bonded</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 mb-4 md:mb-0">&copy; 2023 OK Plumbing & Repair. All Rights Reserved.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="tel:405-999-7289" class="bg-blue-600 hover:bg-blue-700 text-white rounded-full p-4 shadow-lg transition transform hover:scale-110 flex items-center justify-center">
+            <i class="fas fa-phone-alt text-2xl"></i>
+        </a>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Animation for elements when they come into view
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.fade-in');
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+                
+                if (elementPosition < screenPosition) {
+                    element.style.opacity = '1';
+                }
+            });
+        };
+
+        // Set initial state for fade-in elements
+        document.querySelectorAll('.fade-in').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transition = 'opacity 1s ease';
+        });
+
+        // Run animations on load and scroll
+        window.addEventListener('load', animateOnScroll);
+        window.addEventListener('scroll', animateOnScroll);
+    </script>
+</body>
+</html>
